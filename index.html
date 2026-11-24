@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SpendWise personal finance dashboard">
+    <title>SpendWise Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-icon">💰</span>
+                <h2>SpendWise</h2>
+            </div>
+
+            <nav class="navigation">
+                <p class="nav-heading">MENU</p>
+
+                <a href="#overview" class="nav-link active">
+                    <span>🏠</span>
+                    Dashboard
+                </a>
+
+                <a href="#expenses" class="nav-link">
+                    <span>💳</span>
+                    Expenses
+                </a>
+
+                <a href="#income" class="nav-link">
+                    <span>💵</span>
+                    Income
+                </a>
+
+                <a href="#savings" class="nav-link">
+                    <span>🎯</span>
+                    Savings
+                </a>
+
+                <a href="#reports" class="nav-link">
+                    <span>📊</span>
+                    Reports
+                </a>
+
+                <a href="#settings" class="nav-link">
+                    <span>⚙️</span>
+                    Settings
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p>Personal Finance Manager</p>
+                <strong>Spend smarter. Live better.</strong>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard -->
+        <main class="main-content" id="overview">
+
+            <!-- Header -->
+            <header class="top-header">
+                <div class="welcome">
+                    <h1>Dashboard Overview</h1>
+                    <p>Welcome back! Here's your financial summary.</p>
+                </div>
+
+                <div class="header-profile">
+                    <div class="notification">🔔</div>
+
+                    <div class="profile">
+                        <div class="avatar">FA</div>
+                        <div>
+                            <strong>FARDOWZA ALI HASSAN</strong>
+                            <small>Personal Account</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Financial Summary -->
+            <section class="summary-section">
+                <div class="summary-card balance">
+                    <div class="summary-top">
+                        <span>Total Balance</span>
+                        <span>💰</span>
+                    </div>
+                    <h2>KES 85,000</h2>
+                    <p>Available balance</p>
+                </div>
+
+                <div class="summary-card income">
+                    <div class="summary-top">
+                        <span>Total Income</span>
+                        <span>📈</span>
+                    </div>
+                    <h2>KES 120,000</h2>
+                    <p>This month</p>
+                </div>
+
+                <div class="summary-card spending">
+                    <div class="summary-top">
+                        <span>Total Expenses</span>
+                        <span>💸</span>
+                    </div>
+                    <h2>KES 35,000</h2>
+                    <p>This month</p>
+                </div>
+            </section>
+
+            <!-- Expense Categories -->
+            <section class="categories-section" id="expenses">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Expense Categories</h2>
+                        <p>Track where your money goes.</p>
+                    </div>
+
+                    <span class="period">November 2026</span>
+                </div>
+
+                <div class="category-grid">
+
+                    <article class="category-card" tabindex="0">
+                        <div class="card-top">
+                            <div class="category-icon food">🍔</div>
+                            <span class="card-status">Monthly</span>
+                        </div>
+                        <h3>Food</h3>
+                        <h2>KES 8,500</h2>
+                        <p>Groceries and restaurants</p>
+                        <div class="progress">
+                            <div class="progress-fill food-progress"></div>
+                        </div>
+                        <small>65% of budget used</small>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="card-top">
+                            <div class="category-icon transport">🚗</div>
+                            <span class="card-status">Monthly</span>
+                        </div>
+                        <h3>Transport</h3>
+                        <h2>KES 4,000</h2>
+                        <p>Travel and commuting</p>
+                        <div class="progress">
+                            <div class="progress-fill transport-progress"></div>
+                        </div>
+                        <small>40% of budget used</small>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="card-top">
+                            <div class="category-icon rent">🏠</div>
+                            <span class="card-status">Monthly</span>
+                        </div>
+                        <h3>Rent</h3>
+                        <h2>KES 12,000</h2>
+                        <p>House rent and housing</p>
+                        <div class="progress">
+                            <div class="progress-fill rent-progress"></div>
+                        </div>
+                        <small>80% of budget used</small>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="card-top">
+                            <div class="category-icon entertainment">🎮</div>
+                            <span class="card-status">Monthly</span>
+                        </div>
+                        <h3>Entertainment</h3>
+                        <h2>KES 3,500</h2>
+                        <p>Movies and recreation</p>
+                        <div class="progress">
+                            <div class="progress-fill entertainment-progress"></div>
+                        </div>
+                        <small>35% of budget used</small>
+                    </article>
+
+                    <article class="category-card" id="savings" tabindex="0">
+                        <div class="card-top">
+                            <div class="category-icon savings">💎</div>
+                            <span class="card-status">Monthly</span>
+                        </div>
+                        <h3>Savings</h3>
+                        <h2>KES 5,000</h2>
+                        <p>Monthly savings goal</p>
+                        <div class="progress">
+                            <div class="progress-fill savings-progress"></div>
+                        </div>
+                        <small>50% of goal reached</small>
+                    </article>
+
+                    <article class="category-card" tabindex="0">
+                        <div class="card-top">
+                            <div class="category-icon utilities">💡</div>
+                            <span class="card-status">Monthly</span>
+                        </div>
+                        <h3>Utilities</h3>
+                        <h2>KES 2,000</h2>
+                        <p>Water, electricity and internet</p>
+                        <div class="progress">
+                            <div class="progress-fill utilities-progress"></div>
+                        </div>
+                        <small>30% of budget used</small>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Recent Transactions -->
+            <section class="transactions-section" id="reports">
+                <div class="section-heading">
+                    <div>
+                        <h2>Recent Transactions</h2>
+                        <p>Your latest financial activities.</p>
+                    </div>
+                </div>
+
+                <div class="transaction-list">
+
+                    <div class="transaction">
+                        <span class="transaction-icon">🛒</span>
+                        <div class="transaction-info">
+                            <strong>Supermarket Shopping</strong>
+                            <small>Food · November 22, 2026</small>
+                        </div>
+                        <strong class="expense-amount">- KES 2,500</strong>
+                    </div>
+
+                    <div class="transaction">
+                        <span class="transaction-icon">🚕</span>
+                        <div class="transaction-info">
+                            <strong>Transport</strong>
+                            <small>Transport · November 21, 2026</small>
+                        </div>
+                        <strong class="expense-amount">- KES 500</strong>
+                    </div>
+
+                    <div class="transaction">
+                        <span class="transaction-icon">💼</span>
+                        <div class="transaction-info">
+                            <strong>Monthly Salary</strong>
+                            <small>Income · November 20, 2026</small>
+                        </div>
+                        <strong class="income-amount">+ KES 50,000</strong>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <p>© 2026 SpendWise. All rights reserved.</p>
+                <p>Designed by FARDOWZA ALI HASSAN</p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
